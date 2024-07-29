@@ -4,8 +4,10 @@ chrome.action.onClicked.addListener(() => {
       tabs[0].windowId,
       { format: "png" },
       async (dataUrl) => {
-        const BACKEND_URL = "http://localhost:3000";
-        const FRONTEND_URL = "http://localhost:5173";
+        // const BACKEND_URL = "http://localhost:3000";
+        const BACKEND_URL = "https://wat-server.vercel.app";
+        // const FRONTEND_URL = "http://localhost:5173";
+        const FRONTEND_URL = "https://wat-client.vercel.app/";
 
         // Fetch IP address
         const response = await fetch("https://hutils.loxal.net/whois");
